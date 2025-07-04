@@ -1,5 +1,5 @@
 Instance: 3998
-InstanceOf: Procedure
+InstanceOf: ProcedureSurgeryPcsp
 Usage: #example
 * status = #completed
 * text.status = #generated

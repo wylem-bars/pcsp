@@ -1,5 +1,5 @@
 Instance: 3992
-InstanceOf: Procedure
+InstanceOf: ProcedureRadiotherapyPcsp
 Usage: #example
 * status = #completed
 * extension[0].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming"
@@ -11,6 +11,8 @@ Usage: #example
 * category.coding[+] = $cs-radiotherapy-pcsp#1.2
 * code = $sct#33195004
 * subject = Reference(Patient/3971)
+* performedPeriod.start = "2020-11-01"
+* performedPeriod.end = "2020-11-30"
 * reasonReference = Reference(Condition/3972)
 * bodySite[0] = $cs-radiotherapy-pcsp#1.2
 * bodySite[+].extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-body-location-qualifier"

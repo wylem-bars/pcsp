@@ -1,5 +1,5 @@
 Instance: 3985
-InstanceOf: Procedure
+InstanceOf: ProcedureSctProphylaxisPcsp
 Usage: #example
 * status = #completed
 * text.status = #generated
@@ -7,4 +7,5 @@ Usage: #example
 * category = $sct#416608005
 * subject = Reference(Patient/3971)
 * performedPeriod.end = "2020-12-12"
-* reasonReference = Reference(Condition/3972)
+* reasonReference[0] = Reference(Condition/3972)
+* reasonReference[+] = Reference(Procedure/3984)
