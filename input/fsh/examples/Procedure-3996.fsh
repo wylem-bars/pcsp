@@ -1,5 +1,7 @@
 Instance: 3996
 InstanceOf: ProcedureSurgeryPcsp
+Title: "Cineca - Procedure: Surgery Amputation Example"
+Description: "Example of a surgery amputation procedure from Cineca for the PanCareSurPass project"
 Usage: #example
 * status = #completed
 * partOf = Reference(Procedure/3998)

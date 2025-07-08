@@ -1,5 +1,7 @@
 Instance: 3985
 InstanceOf: ProcedureSctProphylaxisPcsp
+Title: "Cineca - Procedure: Prophylaxis Example"
+Description: "Example of a prophylaxis procedure from Cineca for the PanCareSurPass project"
 Usage: #example
 * status = #completed
 * text.status = #generated

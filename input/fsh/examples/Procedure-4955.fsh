@@ -1,11 +1,12 @@
 Instance: 4955
 InstanceOf: ProcedureRadiotherapyPcsp
+Title: "Cineca - Procedure: Radionuclide Therapy Example"
+Description: "Example of a radionuclide therapy procedure from Cineca for the PanCareSurPass project"
 Usage: #example
 * status = #completed
-* extension[0].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming"
-* extension[=].valueTiming.repeat.count = 4
-* extension[+].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope"
-* extension[=].valueCodeableConcept = $sct#1368003
+* extension[performedTiming].valueTiming.repeat.count = 4
+* extension[energyOrIsotope].valueCodeableConcept = $sct#1368003
+* category = $sct#108290001 "Radiotherapy"
 * code = $sct#399315003
 * subject = Reference(Patient/3971)
 * performedPeriod.start = "2021-11-11"

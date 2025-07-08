@@ -1,12 +1,11 @@
 Instance: 5062
-InstanceOf: Condition
+InstanceOf: ConditionPrimaryCancerPcsp
+Title: "Cineca - Condition: First Local Relapse Example"
+Description: "Example of a first local relapse condition from Cineca for the PanCareSurPass project"
 Usage: #example
-* extension[0].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus"
-* extension[=].valueCodeableConcept = $condition-clinical#relapse
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing"
-* extension[=].valueReference = Reference(Condition/3972)
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
-* extension[=].valueDateTime = "2020-11-13"
-* extension[+].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-relapseType"
-* extension[=].valueCodeableConcept = $sct#255470001
+* extension[previousStatus].valueCodeableConcept = $condition-clinical#relapse
+* extension[occurredFollowing].valueReference = Reference(Condition/3972)
+* extension[assertedDate].valueDateTime = "2020-11-13"
+* extension[relapseType].valueCodeableConcept = $sct#255470001
 * subject = Reference(Patient/3971)
+* code = $iccc3#081

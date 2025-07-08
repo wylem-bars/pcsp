@@ -1,6 +1,11 @@
 Instance: 3982
-InstanceOf: Condition
+InstanceOf: ConditionGvhdPcsp
+Title: "Cineca - Condition: Acute GvHD Grade 1 Example"
+Description: "Example of an acute graft-versus-host disease grade 1 condition from Cineca for the PanCareSurPass project"
 Usage: #example
+* clinicalStatus = $condition-clinical#resolved
+* extension[relatedPrimaryCancerCondition].valueReference = Reference(Condition/5062)
+* extension[conditionDueTo].valueReference = Reference(Procedure/ProcedureSTC-1)
 * code = $sct#402355000
 * bodySite.text = "test"
 * subject = Reference(Patient/3971)

@@ -1,6 +1,11 @@
 Instance: 3986
-InstanceOf: Condition
+InstanceOf: ConditionGvhdPcsp
+Title: "Cineca - Condition: Chronic GvHD Limited Example"
+Description: "Example of a chronic graft-versus-host disease (limited) condition from Cineca for the PanCareSurPass project"
 Usage: #example
+* clinicalStatus = $condition-clinical#resolved
+* extension[relatedPrimaryCancerCondition].valueReference = Reference(Condition/5062)
+* extension[conditionDueTo].valueReference = Reference(Procedure/ProcedureSTC-1)
 * code = $sct#402356004
 * bodySite.text = "test"
 * subject = Reference(Patient/3971)

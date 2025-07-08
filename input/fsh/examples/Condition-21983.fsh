@@ -1,7 +1,8 @@
 Instance: 21983
-InstanceOf: Condition
+InstanceOf: ConditionOtherInfosPcsp
+Title: "Cineca - Condition: Growth Hormone Deficiency Example"
+Description: "Example of a growth hormone deficiency condition from Cineca for the PanCareSurPass project"
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/condition-related"
-* extension.valueReference = Reference(Condition/20953)
+* extension[relatedPrimaryCancerCondition].valueReference = Reference(Condition/20953)
 * code = $sct#397827003
 * subject = Reference(Patient/20952)
