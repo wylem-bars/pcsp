@@ -9,6 +9,7 @@ Alias: $questionnaire-maxOccurs = http://hl7.org/fhir/StructureDefinition/questi
 
 Alias: $pcspUri = http://hl7.eu/fhir/ig/pcsp
 Alias: $cs-generic-eu-pcsp = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp
+Alias: $unitsofmeasure = http://unitsofmeasure.org
 
 // --- Code Systems
 Alias: $ajcc = http://cancerstaging.org
