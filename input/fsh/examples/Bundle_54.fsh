@@ -2,7 +2,7 @@ Instance: 54
 InstanceOf: BundlePcsp
 Usage: #example
 Title: "Austria - Bundle: Example of a Childhood Cancer Survivor Passport"
-Description: "Example of a Childhood Cancer Survivor Passport Bundle for the PanCareSurPass project"
+Description: "Example of a Childhood Cancer Survivor Passport Bundle for the PanCareSurPass project (Austria)"
 * identifier.system = "http://fhir.ehealth-systems.at/identifier/pcsp-bundle"
 * identifier.value = "b32a66ac5fed32e4d8670ba71d8191c24c3bcd63"
 * type = #document
